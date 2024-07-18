@@ -1,5 +1,3 @@
-const fs = require('../fs');
-
 function filterItems(category) {
 
   let items = document.getElementsByClassName("item");
@@ -51,9 +49,36 @@ function applyScale(scale) {
 }
 
 function loadItems() {
-  let path = "../images";
+  fetch('/ressources')
+    .then(response => response.json())
+    .then(images => {
+      const gridContainer = document.getElementById('inventory-grid-container');
 
-  var files = FileSystem().readdirSync(path);
+      images.forEach(image => {
+        const categories = image.split("\\").slice(3);
+        let category;
+        if(categories[0] === 'talent_weapon') {
+          category = 'weapon-mats talent-mats';
+        } else {
+          category = categories[0] + '-mats';
+        }
 
-  console.log(files);
+        let path = "../images/ressources";
+        for(const c in categories) {
+          path += `/${categories[c]}`;
+        }
+
+        gridContainer.innerHTML += `
+        <div class="item ${category}">
+          <div class="img-container rarity-1-grad">
+            <img src="${path}" alt="" class="res-img">
+          </div>
+          <div class="rarity-bar rarity-1"></div>
+          <input type="number" placeholder="Quantity" min="0">
+        </div>
+        `
+      });
+    });
+
+
 }
