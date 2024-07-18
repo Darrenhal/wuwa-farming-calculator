@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wuthering Waves Material Farming Calculator</title>
+
+  <link rel="stylesheet" href="../style/general/style.css">
+  <link rel="stylesheet" href="../style/general/sidebar.css">
+  <link rel="stylesheet" href="../style/conversion/conversionstyles.css">
+</head>
+<body>
+  <div class="sidenav" id="navSidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="inventory.html">Inventory</a>
+    <a href="#">Farming Calculator</a>
+  </div>
+
+  <img onclick="openNav()" src="../images/icons/hamburger-menu.svg" id="nav-img">
+
+  <div id="main">
+    <div class="grid-container">
+      <div class="res-label">
+        <label for="">Ressource Type</label>
+      </div>
+      <div class="quantity-labels">
+        <div class="rarity-description">
+          <label for="">Rarity 1 (green)</label>
+          <div class="rarity-bar" id="rarity-1"></div>
+        </div>
+        <div class="rarity-description">
+          <label for="">Rarity 2 (blue)</label>
+          <div class="rarity-bar" id="rarity-2"></div>
+        </div>
+        <div class="rarity-description">
+          <label for="">Rarity 3 (purple)</label>
+          <div class="rarity-bar" id="rarity-3"></div>
+        </div>
+        <div class="rarity-description">
+          <label for="">Rarity 4 (gold)</label>
+          <div class="rarity-bar" id="rarity-4"></div>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <select name="Ressource Type" id="res-type-dropdown">
+          <option value="char-xp">Character XP Material</option>
+          <option value="talent-mat">Talent Material</option>
+          <option value="weapon-xp">Weapon XP Material</option>
+          <option value="ascension-ring">Ascension Ring</option>
+        </select>
+      </div>
+      <div class="quantity-fields">
+        <input type="number" min="0" placeholder="Rarity 1" class="r1">
+        <input type="number" min="0" placeholder="Rarity 2" class="r2">
+        <input type="number" min="0" placeholder="Rarity 3" class="r3">
+        <input type="number" min="0" placeholder="Rarity 4" class="r4">
+      </div>
+      <div class="ul-row">
+        <label for="" class="ul-label">Union Level</label>
+        <input type="number" placeholder="Union Level" class="ul-input" min="1" max="80">
+      </div>
+    </div>
+
+    <div class="button-section">
+      <button>Calculate # of total runs</button>
+      <button>Calculate # of remaining runs</button>
+      <button>Add to inventory</button>
+      <button>Set inventory</button>
+    </div>
+  </div>
+  
+  <script src="../js/navbar.js"></script>
+</body>
+</html>

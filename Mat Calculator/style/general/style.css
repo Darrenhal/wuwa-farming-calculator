@@ -1,0 +1,17 @@
+body {
+  background-color: rgb(52, 52, 52);
+  margin: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 1vmax;
+}
+
+#main {
+  transition: margin-left .3s;
+  margin-top: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
