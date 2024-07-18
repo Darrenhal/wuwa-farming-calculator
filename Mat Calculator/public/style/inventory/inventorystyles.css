@@ -1,0 +1,82 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+
+select {
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: white;
+  height: 62px;
+  font-size: 20px;
+}
+
+input {
+  padding: 10px 20px;
+  border-radius: 0px 0px 8px 8px;
+  font-size: 20px;
+  width: 162px;
+  border: none;
+}
+
+input:focus {
+   outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  margin-right: 20px;
+  transition: box-shadow .15s;
+}
+
+button:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+button:active {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.inventory-grid-container {
+  display: flex;
+  column-gap: 50px;
+  row-gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.img-container {
+  width: 200px;
+  height: 200px;
+  display: block;
+  border: solid 1px;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: contain;
+  align-content: center;
+  transition: width .3s, height .3s;
+}
+
+.res-img {
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transition: width .3s;
+}
+
+.res-img:hover {
+  width: 200px;
+}
+
+.rarity-bar {
+  width: 200px;
+  height: 15px;
+  border: solid 1px;
+  border-top: solid 1px rgba(255, 255, 255, .2);
+}

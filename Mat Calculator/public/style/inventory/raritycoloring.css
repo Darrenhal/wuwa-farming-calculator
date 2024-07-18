@@ -1,0 +1,48 @@
+.rarity-1 {
+  background-color: rgb(0, 231, 19);
+}
+
+.rarity-1-grad {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), 80%, rgba(0, 231, 19, .2));
+}
+
+.rarity-1-grad:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), 80%, rgba(0, 231, 19, .5));
+}
+
+.rarity-2 {
+  background-color: rgb(0, 124, 213);
+}
+
+.rarity-2-grad {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), 80%, rgba(0, 124, 213, .2));
+}
+
+.rarity-2-grad:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), 80%, rgba(0, 124, 213, .5));
+}
+
+
+.rarity-3 {
+  background-color: rgb(133, 0, 204);
+}
+
+.rarity-3-grad {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), 80%, rgba(133, 0, 204, .2));
+}
+
+.rarity-3-grad:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), 80%, rgba(133, 0, 204, .5));
+}
+
+.rarity-4 {
+  background-color: rgb(205, 191, 0);
+}
+
+.rarity-4-grad {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), 80%, rgba(205, 191, 0, .2));
+}
+
+.rarity-4-grad:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), 80%, rgba(205, 191, 0, .5));
+}
