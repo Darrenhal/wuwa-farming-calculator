@@ -43,8 +43,273 @@
         "weapon-mats"
       ],
       "img-src": "images/ressources/talent/Item_FF_Whisperin_Core.webp"
+    },
+    {
+      "type": "Howler Core",
+      "name": "LF Howler Core",
+      "rarity": 1,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_LF_Howler_Core.webp"
+    },
+    {
+      "type": "Howler Core",
+      "name": "MF Howler Core",
+      "rarity": 2,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_MF_Howler_Core.webp"
+    },
+    {
+      "type": "Howler Core",
+      "name": "HF Howler Core",
+      "rarity": 3,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_HF_Howler_Core.webp"
+    },
+    {
+      "type": "Howler Core",
+      "name": "FF Howler Core",
+      "rarity": 4,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_FF_Howler_Core.webp"
+    },
+    {
+      "type": "Metallic Drip",
+      "name": "Inert Metallic Drip",
+      "rarity": 1,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Inert_Metallic_Drip.webp"
+    },
+    {
+      "type": "Metallic Drip",
+      "name": "Reactive Metallic Drip",
+      "rarity": 2,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Reactive_Metallic_Drip.webp"
+    },
+    {
+      "type": "Metallic Drip",
+      "name": "Polarized Metallic Drip",
+      "rarity": 3,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Polarized_Metallic_Drip.webp"
+    },
+    {
+      "type": "Metallic Drip",
+      "name": "Heterized Metallic Drip",
+      "rarity": 4,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Heterized_Metallic_Drip.webp"
+    },
+    {
+      "type": "Phlogiston",
+      "name": "Impure Phlogiston",
+      "rarity": 1,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Impure_Phlogiston.webp"
+    },
+    {
+      "type": "Phlogiston",
+      "name": "Extracted Phlogiston",
+      "rarity": 2,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Extracted_Phlogiston.webp"
+    },
+    {
+      "type": "Phlogiston",
+      "name": "Refined Phlogiston",
+      "rarity": 3,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Refined_Phlogiston.webp"
+    },
+    {
+      "type": "Phlogiston",
+      "name": "Flawless Phlogiston",
+      "rarity": 4,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Flawless_Phlogiston.webp"
+    },
+    {
+      "type": "Helix",
+      "name": "Lento Helix",
+      "rarity": 1,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Lento_Helix.webp"
+    },
+    {
+      "type": "Helix",
+      "name": "Adagio Helix",
+      "rarity": 2,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Adagio_Helix.webp"
+    },
+    {
+      "type": "Helix",
+      "name": "Andante Helix",
+      "rarity": 3,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Andante_Helix.webp"
+    },
+    {
+      "type": "Helix",
+      "name": "Presto Helix",
+      "rarity": 4,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Presto_Helix.webp"
+    },
+    {
+      "type": "Waveworn Residue",
+      "name": "Waveworn Residue 210",
+      "rarity": 1,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Waveworn_Residue_210.webp"
+    },
+    {
+      "type": "Waveworn Residue",
+      "name": "Waveworn Residue 226",
+      "rarity": 2,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Waveworn_Residue_226.webp"
+    },
+    {
+      "type": "Waveworn Residue",
+      "name": "Waveworn Residue 235",
+      "rarity": 3,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Waveworn_Residue_235.webp"
+    },
+    {
+      "type": "Waveworn Residue",
+      "name": "Waveworn Residue 239",
+      "rarity": 4,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Waveworn_Residue_239.webp"
+    },
+    {
+      "type": "Cadence",
+      "name": "Cadence Seed",
+      "rarity": 1,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Cadence_Seed.webp"
+    },
+    {
+      "type": "Cadence",
+      "name": "Cadence Bud",
+      "rarity": 2,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Cadence_Bud.webp"
+    },
+    {
+      "type": "Cadence",
+      "name": "Cadence Leaf",
+      "rarity": 3,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Cadence_Leaf.webp"
+    },
+    {
+      "type": "Cadence",
+      "name": "Cadence Blossom",
+      "rarity": 4,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Cadence_Blossom.webp"
     }
-  ],"xp-mats": [
+  ],
+  "xp-mats": [
     {
       "type": "Resonance Potion",
       "name": "Basic Resonance Potion",
@@ -278,7 +543,94 @@
     }
   ],
   "mob-drops": [
-
+    {
+      "type": "Ring",
+      "name": "Crude Ring",
+      "rarity": 1,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Crude_Ring.webp"
+    },
+    {
+      "type": "Ring",
+      "name": "Basic Ring",
+      "rarity": 2,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Basic_Ring.webp"
+    },
+    {
+      "type": "Ring",
+      "name": "Improved Ring",
+      "rarity": 3,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Improved_Ring.webp"
+    },
+    {
+      "type": "Ring",
+      "name": "Tailored Ring",
+      "rarity": 4,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Tailored_Ring.webp"
+    },
+    {
+      "type": "Mask",
+      "name": "Mask of Constraint",
+      "rarity": 1,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Mask_of_Constraint.webp"
+    },
+    {
+      "type": "Mask",
+      "name": "Mask of Erosion",
+      "rarity": 2,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Mask_of_Erosion.webp"
+    },
+    {
+      "type": "Mask",
+      "name": "Mask of Distortion",
+      "rarity": 3,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Mask_of_Distortion.webp"
+    },
+    {
+      "type": "Mask",
+      "name": "Mask of Insanity",
+      "rarity": 4,
+      "categories": [
+        "item",
+        "talent-mats",
+        "weapon-mats"
+      ],
+      "img-src": "images/ressources/talent/Item_Mask_of_Insanity.webp"
+    }
   ],
   "currencies": [
     {
