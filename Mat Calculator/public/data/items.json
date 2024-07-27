@@ -9,7 +9,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_LF_Whisperin_Core.webp"
+      "img-src": "images/ressources/talent_weapon/Item_LF_Whisperin_Core.webp"
     },
     {
       "type": "Whisperin Core",
@@ -20,7 +20,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_MF_Whisperin_Core.webp"
+      "img-src": "images/ressources/talent_weapon/Item_MF_Whisperin_Core.webp"
     },
     {
       "type": "Whisperin Core",
@@ -31,7 +31,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_HF_Whisperin_Core.webp"
+      "img-src": "images/ressources/talent_weapon/Item_HF_Whisperin_Core.webp"
     },
     {
       "type": "Whisperin Core",
@@ -42,7 +42,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_FF_Whisperin_Core.webp"
+      "img-src": "images/ressources/talent_weapon/Item_FF_Whisperin_Core.webp"
     },
     {
       "type": "Howler Core",
@@ -53,7 +53,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_LF_Howler_Core.webp"
+      "img-src": "images/ressources/talent_weapon/Item_LF_Howler_Core.webp"
     },
     {
       "type": "Howler Core",
@@ -64,7 +64,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_MF_Howler_Core.webp"
+      "img-src": "images/ressources/talent_weapon/Item_MF_Howler_Core.webp"
     },
     {
       "type": "Howler Core",
@@ -75,7 +75,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_HF_Howler_Core.webp"
+      "img-src": "images/ressources/talent_weapon/Item_HF_Howler_Core.webp"
     },
     {
       "type": "Howler Core",
@@ -86,7 +86,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_FF_Howler_Core.webp"
+      "img-src": "images/ressources/talent_weapon/Item_FF_Howler_Core.webp"
     },
     {
       "type": "Metallic Drip",
@@ -97,7 +97,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Inert_Metallic_Drip.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Inert_Metallic_Drip.webp"
     },
     {
       "type": "Metallic Drip",
@@ -108,7 +108,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Reactive_Metallic_Drip.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Reactive_Metallic_Drip.webp"
     },
     {
       "type": "Metallic Drip",
@@ -119,7 +119,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Polarized_Metallic_Drip.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Polarized_Metallic_Drip.webp"
     },
     {
       "type": "Metallic Drip",
@@ -130,7 +130,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Heterized_Metallic_Drip.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Heterized_Metallic_Drip.webp"
     },
     {
       "type": "Phlogiston",
@@ -141,7 +141,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Impure_Phlogiston.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Impure_Phlogiston.webp"
     },
     {
       "type": "Phlogiston",
@@ -152,7 +152,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Extracted_Phlogiston.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Extracted_Phlogiston.webp"
     },
     {
       "type": "Phlogiston",
@@ -163,7 +163,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Refined_Phlogiston.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Refined_Phlogiston.webp"
     },
     {
       "type": "Phlogiston",
@@ -174,7 +174,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Flawless_Phlogiston.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Flawless_Phlogiston.webp"
     },
     {
       "type": "Helix",
@@ -185,7 +185,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Lento_Helix.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Lento_Helix.webp"
     },
     {
       "type": "Helix",
@@ -196,7 +196,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Adagio_Helix.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Adagio_Helix.webp"
     },
     {
       "type": "Helix",
@@ -207,7 +207,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Andante_Helix.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Andante_Helix.webp"
     },
     {
       "type": "Helix",
@@ -218,7 +218,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Presto_Helix.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Presto_Helix.webp"
     },
     {
       "type": "Waveworn Residue",
@@ -229,7 +229,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Waveworn_Residue_210.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Waveworn_Residue_210.webp"
     },
     {
       "type": "Waveworn Residue",
@@ -240,7 +240,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Waveworn_Residue_226.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Waveworn_Residue_226.webp"
     },
     {
       "type": "Waveworn Residue",
@@ -251,7 +251,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Waveworn_Residue_235.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Waveworn_Residue_235.webp"
     },
     {
       "type": "Waveworn Residue",
@@ -262,7 +262,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Waveworn_Residue_239.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Waveworn_Residue_239.webp"
     },
     {
       "type": "Cadence",
@@ -273,7 +273,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Cadence_Seed.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Cadence_Seed.webp"
     },
     {
       "type": "Cadence",
@@ -284,7 +284,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Cadence_Bud.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Cadence_Bud.webp"
     },
     {
       "type": "Cadence",
@@ -295,7 +295,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Cadence_Leaf.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Cadence_Leaf.webp"
     },
     {
       "type": "Cadence",
@@ -306,7 +306,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Cadence_Blossom.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Cadence_Blossom.webp"
     }
   ],
   "xp-mats": [
@@ -552,7 +552,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Crude_Ring.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Crude_Ring.webp"
     },
     {
       "type": "Ring",
@@ -563,7 +563,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Basic_Ring.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Basic_Ring.webp"
     },
     {
       "type": "Ring",
@@ -574,7 +574,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Improved_Ring.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Improved_Ring.webp"
     },
     {
       "type": "Ring",
@@ -585,7 +585,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Tailored_Ring.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Tailored_Ring.webp"
     },
     {
       "type": "Mask",
@@ -596,7 +596,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Mask_of_Constraint.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Mask_of_Constraint.webp"
     },
     {
       "type": "Mask",
@@ -607,7 +607,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Mask_of_Erosion.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Mask_of_Erosion.webp"
     },
     {
       "type": "Mask",
@@ -618,7 +618,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Mask_of_Distortion.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Mask_of_Distortion.webp"
     },
     {
       "type": "Mask",
@@ -629,7 +629,7 @@
         "talent-mats",
         "weapon-mats"
       ],
-      "img-src": "images/ressources/talent/Item_Mask_of_Insanity.webp"
+      "img-src": "images/ressources/talent_weapon/Item_Mask_of_Insanity.webp"
     }
   ],
   "currencies": [
@@ -676,7 +676,7 @@
         "item",
         "gacha-mats"
       ],
-      "img-src": "images/ressources/gacha/Item_Osciallted_Coral.webp"
+      "img-src": "images/ressources/gacha/Item_Oscillated_Coral.webp"
     },
     {
       "name": "Afterglow Coral",

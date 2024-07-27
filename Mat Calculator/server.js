@@ -27,35 +27,17 @@ app.get('/', (req, res) => {
 app.get('/ressources', (req, res) => {
   const ressourcePath = './public/images/ressources';
 
-  fs.readdir('./public/images/ressources', (err, files) =>  {
+  fs.readFile('./public/data/items.json', 'utf-8', (err, file) => {
 
     if(err) {
-      res.status(500).send('sorry, out of order');
+      res.status(500).send('Ressource API out of order!');
     }
 
-    const fileStructure = [];
-
-
-    function throughDirectory(directory) {
-      fs.readdirSync(directory).forEach(file => {
-        const absolute = path.join(directory, file);
-        if(fs.statSync(absolute).isDirectory()) {
-          return throughDirectory(absolute);
-        } else {
-          return fileStructure.push(absolute);
-        }
-      })
-    }
-
-    throughDirectory(ressourcePath);
-
-    const imageFiles = fileStructure.filter(file => {
-      return /\.(jpg|jpeg|png|gif|webp)$/.test(file);
-    });
+    let f = JSON.parse(file);
     
-    res.json(imageFiles);
+    res.send(f);
 
-  })
+  });
 });
 
 

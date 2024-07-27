@@ -51,33 +51,88 @@ function applyScale(scale) {
 function loadItems() {
   fetch('/ressources')
     .then(response => response.json())
-    .then(images => {
+    .then(ressources => {
       const gridContainer = document.getElementById('inventory-grid-container');
 
-      images.forEach(image => {
-        const categories = image.split("\\").slice(3);
-        let category;
-        if(categories[0] === 'talent_weapon') {
-          category = 'weapon-mats talent-mats';
-        } else {
-          category = categories[0] + '-mats';
-        }
+      const rootPath = "";
 
-        let path = "../images/ressources";
-        for(const c in categories) {
-          path += `/${categories[c]}`;
-        }
+      let ressourceImgSource = [];
+      let ressourceCategories = [];
+      let ressourceRarity = [];
 
+      ressources['domain-drops'].forEach(ressource => {
+        ressourceImgSource.push(rootPath + ressource['img-src']);
+        let categoryString = "";
+        ressource['categories'].forEach(category => {
+          categoryString += category + " ";
+        });
+        ressourceCategories.push(categoryString);
+        ressourceRarity.push(ressource['rarity']);
+      });
+
+      ressources['mob-drops'].forEach(ressource => {
+        ressourceImgSource.push(rootPath + ressource['img-src']);
+        let categoryString = "";
+        ressource['categories'].forEach(category => {
+          categoryString += category + " ";
+        });
+        ressourceCategories.push(categoryString);
+        ressourceRarity.push(ressource['rarity']);
+      });
+
+      ressources['weekly-boss-drops'].forEach(ressource => {
+        ressourceImgSource.push(rootPath + ressource['img-src']);
+        let categoryString = "";
+        ressource['categories'].forEach(category => {
+          categoryString += category + " ";
+        });
+        ressourceCategories.push(categoryString);
+        ressourceRarity.push(ressource['rarity']);
+      });
+
+      ressources['boss-drops'].forEach(ressource => {
+        ressourceImgSource.push(rootPath + ressource['img-src']);
+        let categoryString = "";
+        ressource['categories'].forEach(category => {
+          categoryString += category + " ";
+        });
+        ressourceCategories.push(categoryString);
+        ressourceRarity.push(ressource['rarity']);
+      });
+
+      ressources['xp-mats'].forEach(ressource => {
+        ressourceImgSource.push(rootPath + ressource['img-src']);
+        let categoryString = "";
+        ressource['categories'].forEach(category => {
+          categoryString += category + " ";
+        });
+        ressourceCategories.push(categoryString);
+        ressourceRarity.push(ressource['rarity']);
+      });
+
+      ressources['currencies'].forEach(ressource => {
+        ressourceImgSource.push(rootPath + ressource['img-src']);
+        let categoryString = "";
+        ressource['categories'].forEach(category => {
+          categoryString += category + " ";
+        });
+        ressourceCategories.push(categoryString);
+        ressourceRarity.push(ressource['rarity']);
+      });
+
+      const resLength = ressourceCategories.length;
+
+      for(let i = 0; i < resLength; i++) {
         gridContainer.innerHTML += `
-        <div class="item ${category}">
-          <div class="img-container rarity-1-grad">
-            <img src="${path}" alt="" class="res-img">
+        <div class="${ressourceCategories[i]}">
+          <div class="img-container rarity-${ressourceRarity[i]}-grad">
+            <img src="${ressourceImgSource[i]}" alt="" class="res-img">
           </div>
-          <div class="rarity-bar rarity-1"></div>
+          <div class="rarity-bar rarity-${ressourceRarity[i]}"></div>
           <input type="number" placeholder="Quantity" min="0">
         </div>
         `
-      });
+      }
     });
 
 
