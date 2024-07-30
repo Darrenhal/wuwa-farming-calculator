@@ -7,8 +7,6 @@ const PORT = 3000;
 
 const directoryPath = path.join(__dirname, 'ui'); // Ändern Sie dies auf Ihr Hauptverzeichnis
 
-const dynloader = require('./public/js/dynloader.js');
-
 app.use(express.static(directoryPath));
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -39,9 +37,6 @@ app.get('/ressources', (req, res) => {
 
   });
 });
-
-
-app.use('/', dynloader);
 
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);

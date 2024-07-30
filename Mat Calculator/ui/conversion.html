@@ -9,14 +9,16 @@
   <link rel="stylesheet" href="../style/general/sidebar.css">
   <link rel="stylesheet" href="../style/conversion/conversionstyles.css">
 </head>
-<body onload="loadItems()">
-  <div class="sidenav" id="navSidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="inventory.html">Inventory</a>
-    <a href="#">Farming Calculator</a>
+<body>
+  <div id="header">
+    <div class="sidenav" id="navSidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="inventory.html">Inventory</a>
+      <a href="#">Farming Calculator</a>
+    </div>
+  
+    <img onclick="openNav()" src="../images/icons/hamburger-menu.svg" id="nav-img">
   </div>
-
-  <img onclick="openNav()" src="../images/icons/hamburger-menu.svg" id="nav-img">
 
   <div id="main">
     <div class="grid-container">
@@ -51,14 +53,14 @@
         </select>
       </div>
       <div class="quantity-fields">
-        <input type="number" min="0" placeholder="Rarity 1" class="r1">
-        <input type="number" min="0" placeholder="Rarity 2" class="r2">
-        <input type="number" min="0" placeholder="Rarity 3" class="r3">
-        <input type="number" min="0" placeholder="Rarity 4" class="r4">
+        <input type="number" min="0" placeholder="Rarity 1" id="r1" oninput="validateRessourceAmount(this.value, this.id)">
+        <input type="number" min="0" placeholder="Rarity 2" id="r2" oninput="validateRessourceAmount(this.value, this.id)">
+        <input type="number" min="0" placeholder="Rarity 3" id="r3" oninput="validateRessourceAmount(this.value, this.id)">
+        <input type="number" min="0" placeholder="Rarity 4" id="r4" oninput="validateRessourceAmount(this.value, this.id)">
       </div>
       <div class="ul-row">
         <label for="" class="ul-label">Union Level</label>
-        <input type="number" placeholder="Union Level" class="ul-input" min="1" max="80">
+        <input type="number" placeholder="Union Level" id="ul-input" min="1" max="60" oninput="validateUL(this.value)">
       </div>
     </div>
 
@@ -71,6 +73,6 @@
   </div>
   
   <script src="../js/navbar.js"></script>
-  <script src="../js/dynloader.js"></script>
+  <script src="../js/conversion.js"></script>
 </body>
 </html>

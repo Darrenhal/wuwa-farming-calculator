@@ -1,6 +1,6 @@
-#header {
-  display: flex;
-  justify-content: space-between;
+#mat-selector {
+  transition: margin-left .3s;
+  display: inline-block;
 }
 
 select {
@@ -47,7 +47,6 @@ button:active {
   column-gap: 50px;
   row-gap: 50px;
   flex-wrap: wrap;
-  margin-top: 30px;
 }
 
 .img-container {

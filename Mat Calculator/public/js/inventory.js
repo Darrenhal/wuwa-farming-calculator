@@ -1,3 +1,5 @@
+window.onscroll = function() {animateHeader()};
+
 function filterItems(category) {
 
   let items = document.getElementsByClassName("item");
@@ -45,6 +47,20 @@ function applyScale(scale) {
   for (var i = 0; i < raritybars.length; i++) {
     let width = (200 / 3) * scale;
     raritybars[i].style.width = width + "px";
+  }
+}
+
+function animateHeader() {
+  if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    // document.getElementById("nav-img").style.display = "flex";
+    // document.getElementById("mat-selector").style.display = "flex";
+    document.getElementById("header").style.backgroundColor = "rgb(35, 35, 35)";
+    document.getElementById("header").style.padding = "10px";
+  } else {
+    // document.getElementById("nav-img").style.display = "block";
+    // document.getElementById("mat-selector").style.display = "block";
+    document.getElementById("header").style.backgroundColor = "rgb(52, 52, 52)";
+    document.getElementById("header").style.padding = "30px";
   }
 }
 

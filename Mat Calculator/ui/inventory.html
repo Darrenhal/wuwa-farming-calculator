@@ -12,41 +12,44 @@
   <link rel="stylesheet" href="../style/inventory/raritycoloring.css">
 </head>
 <body onload="loadItems()">
-  <div><div class="sidenav" id="navSidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">Inventory</a>
-    <a href="conversion.html">Farming Calculator</a>
-  </div>
 
-  <img onclick="openNav()" src="../images/icons/hamburger-menu.svg" id="nav-img"></div>
-
-  <div id="main">
-    <div id="header">
-      <div>
-        <select onchange="filterItems(this.value)">
-          <option value="all-mats">All Materials</option>
-          <option value="character-mats">Character Materials</option>
-          <option value="weapon-mats">Weapon Materials</option>
-          <option value="talent-mats">Talent Materials</option>
-          <option value="echo-mats">Echo Materials</option>
-          <option value="gacha-mats">Gacha Materials</option>
-        </select>
-      </div>
-      <div>
-        <!-- <button onclick="applyScale(1)">Small icons</button>
-        <button onclick="applyScale(2)">Medium icons</button>
-        <button onclick="applyScale(3)">Large icons</button> -->
-        <button>Save</button>
-      </div>
-      
+  <div id="header">
+    <div class="sidenav" id="navSidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeInventoryNav()">&times;</a>
+      <a href="#">Inventory</a>
+      <a href="conversion.html">Farming Calculator</a>
     </div>
 
+    <img onclick="openInventoryNav()" src="../images/icons/hamburger-menu.svg" id="nav-img">
+    <div id="mat-selector">
+      <select onchange="filterItems(this.value)">
+        <option value="all-mats">All Materials</option>
+        <option value="character-mats">Character Materials</option>
+        <option value="weapon-mats">Weapon Materials</option>
+        <option value="talent-mats">Talent Materials</option>
+        <option value="echo-mats">Echo Materials</option>
+        <option value="gacha-mats">Gacha Materials</option>
+      </select>
+    </div>
+    <!-- <div>
+      <button onclick="applyScale(1)">Small icons</button>
+      <button onclick="applyScale(2)">Medium icons</button>
+      <button onclick="applyScale(3)">Large icons</button>
+      <button>Save</button>
+    </div> -->
+
+    <!-- <div id="header-row">
+
+    </div>
+    <img src="../images/icons/login.png" id="login-img"> -->
+  </div>
+  
+  <div id="main">
     <div id="inventory-grid-container">
     </div>
   </div>
 
   <script src="../js/navbar.js"></script>
   <script src="../js/inventory.js"></script>
-  <script src="../js/dynloader.js"></script>
 </body>
 </html>
