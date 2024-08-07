@@ -10,7 +10,7 @@ select {
 }
 
 input {
-  padding: 10px 20px;
+  padding: 20px;
   border-radius: 8px;
   font-size: 20px;
   border: none;
@@ -44,23 +44,53 @@ button:active {
   row-gap: 20px;
 }
 
-.dropdown, .res-label {
-  display: inline;
-  margin-right: 50px;
-}
-
-.quantity-fields, .quantity-labels {
-  display: grid;
-  column-gap: 50px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+.res-label {
+  margin-bottom: 15px;
 }
 
 .grid-container {
   display: grid;
-  column-gap: 50px;
+  grid-template-columns: 2fr 4fr;
+  column-gap: 40px;
+}
+
+.ressource-selection-container {
+  display: flex;
   row-gap: 15px;
-  grid-template-columns: 1fr 4fr;
+  column-gap: 40px;
+  flex-wrap: wrap;
+  /* max-height: 220px; */
+}
+
+.flex-container {
+  display: flex;
+  row-gap: 15px;
+  column-gap: 40px;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.flex-item  {
+  flex: 1;
+  min-width: 200px;
+}
+
+.selection-flex-item  {
+  display: grid;
+  flex: 1;
+  min-width: 200px;
+  max-height: 0px;
+  box-sizing: border-box;
+}
+
+.dropdown {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.res-input {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .ul-row {
@@ -82,11 +112,20 @@ button:active {
 
 .rarity-description {
   display: flex;
+  column-gap: 20px;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 15px;
+}
+
+.rarity-label {
+  flex: 1;
+  text-wrap: nowrap;
+  box-sizing: border-box;
 }
 
 .rarity-bar {
+  min-width: 30px;
   width: 100px;
   height: 15px;
 }
@@ -105,4 +144,68 @@ button:active {
 
 #rarity-4 {
   background-color: rgb(205, 191, 0);
+}
+
+.ressource-type-selector {
+  margin-bottom: 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 26px;
+  margin: 0px 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 124, 213);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: rgb(255, 206, 44);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(255, 206, 44);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(34px);
+  -ms-transform: translateX(34px);
+  transform: translateX(34px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

@@ -15,3 +15,14 @@ function validateRessourceAmount(value, id) {
     document.getElementById(id).value = value;
   }
 }
+
+function loadRessources() {
+  fetch('/ressources')
+    .then(response => response.json())
+    .then(ressources => {
+      let keys = Object.keys(ressources);
+
+
+      console.log(Object.keys(ressources)[0]);
+    });
+}

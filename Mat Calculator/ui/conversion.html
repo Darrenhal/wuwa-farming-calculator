@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../style/general/sidebar.css">
   <link rel="stylesheet" href="../style/conversion/conversionstyles.css">
 </head>
-<body>
+<body onload="loadRessources()">
   <div id="header">
     <div class="sidenav" id="navSidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -21,47 +21,82 @@
   </div>
 
   <div id="main">
+    <div class="ressource-type-selector">
+      <span>Select ressources: By Usage</span>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+      <span>By Acquisition Method</span>
+    </div>
+
+
     <div class="grid-container">
-      <div class="res-label">
-        <label for="">Ressource Type</label>
-      </div>
-      <div class="quantity-labels">
-        <div class="rarity-description">
-          <label for="">Rarity 1 (green)</label>
-          <div class="rarity-bar" id="rarity-1"></div>
+      <div class="ressource-selection-container">
+        <div class="selection-flex-item">
+          <div class="res-label">
+            <label for="">Ressource Type</label>
+          </div>
+          <select name="Ressource Type" id="res-type-dropdown" aria-label="Ressource Type" class="dropdown">
+            <option value="char-xp">Character Material</option>
+            <option value="weapon-xp">Weapon Material</option>
+            <option value="talent-mat">Talent Material</option>
+            <option value="ascension-ring">Echo Material</option>
+            <option value="ascension-ring">Gacha Currencies</option>
+          </select>
         </div>
-        <div class="rarity-description">
-          <label for="">Rarity 2 (blue)</label>
-          <div class="rarity-bar" id="rarity-2"></div>
-        </div>
-        <div class="rarity-description">
-          <label for="">Rarity 3 (purple)</label>
-          <div class="rarity-bar" id="rarity-3"></div>
-        </div>
-        <div class="rarity-description">
-          <label for="">Rarity 4 (gold)</label>
-          <div class="rarity-bar" id="rarity-4"></div>
+
+        <div class="selection-flex-item">
+          <div class="res-label">
+            <label for="">Material Type</label>
+          </div>
+          <select name="Material Type" id="mat-type-dropdown" aria-label="Material Type" class="dropdown">
+            <option value="char-xp">Character XP Material</option>
+            <option value="talent-mat">Talent Material</option>
+            <option value="weapon-xp">Weapon XP Material</option>
+            <option value="ascension-ring">Ascension Ring</option>
+          </select>
         </div>
       </div>
 
-      <div class="dropdown">
-        <select name="Ressource Type" id="res-type-dropdown">
-          <option value="char-xp">Character XP Material</option>
-          <option value="talent-mat">Talent Material</option>
-          <option value="weapon-xp">Weapon XP Material</option>
-          <option value="ascension-ring">Ascension Ring</option>
-        </select>
+      <div class="flex-container">
+        <div class="flex-item">
+          <div class="rarity-description">
+            <label class="rarity-label">Rarity 1 (green)</label>
+            <div class="rarity-bar" id="rarity-1"></div>
+          </div>
+          <input class="res-input" type="number" min="0" placeholder="Rarity 1" id="r1" oninput="validateRessourceAmount(this.value, this.id)">
+        </div>
+
+        <div class="flex-item">
+          <div class="rarity-description">
+            <label class="rarity-label">Rarity 2 (blue)</label>
+            <div class="rarity-bar" id="rarity-2"></div>
+          </div>
+          <input class="res-input" type="number" min="0" placeholder="Rarity 2" id="r2" oninput="validateRessourceAmount(this.value, this.id)">
+        </div>
+
+        <div class="flex-item">
+          <div class="rarity-description">
+            <label class="rarity-label">Rarity 3 (purple)</label>
+            <div class="rarity-bar" id="rarity-3"></div>
+          </div>
+          <input class="res-input" type="number" min="0" placeholder="Rarity 3" id="r3" oninput="validateRessourceAmount(this.value, this.id)">
+        </div>
+
+        <div class="flex-item">
+          <div class="rarity-description">
+            <label class="rarity-label">Rarity 4 (gold)</label>
+            <div class="rarity-bar" id="rarity-4"></div>
+          </div>
+          <input class="res-input" type="number" min="0" placeholder="Rarity 4" id="r4" oninput="validateRessourceAmount(this.value, this.id)">
+        </div>
       </div>
-      <div class="quantity-fields">
-        <input type="number" min="0" placeholder="Rarity 1" id="r1" oninput="validateRessourceAmount(this.value, this.id)">
-        <input type="number" min="0" placeholder="Rarity 2" id="r2" oninput="validateRessourceAmount(this.value, this.id)">
-        <input type="number" min="0" placeholder="Rarity 3" id="r3" oninput="validateRessourceAmount(this.value, this.id)">
-        <input type="number" min="0" placeholder="Rarity 4" id="r4" oninput="validateRessourceAmount(this.value, this.id)">
-      </div>
-      <div class="ul-row">
-        <label for="" class="ul-label">Union Level</label>
-        <input type="number" placeholder="Union Level" id="ul-input" min="1" max="60" oninput="validateUL(this.value)">
-      </div>
+    </div>
+
+    <div class="ul-row">
+      <label for="" class="ul-label">Union Level</label>
+      <input type="number" placeholder="Union Level" id="ul-input" min="1" max="60" oninput="validateUL(this.value)">
     </div>
 
     <div class="button-section">

@@ -3,7 +3,8 @@ function openNav() {
   document.getElementById("main").style.marginLeft = "250px";
   document.getElementById("nav-img").style.height = "0px";
   document.getElementById("nav-img").style.marginRight = "0px";
-  document.getElementById("nav-img").style.transform = "rotate(45deg)";
+  document.getElementById("nav-img").style.transform = "rotate(180deg)";
+  document.getElementById("nav-img").style.transitionDelay = "0s"
 }
 
 function closeNav() {
@@ -12,6 +13,7 @@ function closeNav() {
   document.getElementById("nav-img").style.height = "50px";
   document.getElementById("nav-img").style.marginRight = "20px";
   document.getElementById("nav-img").style.transform = "rotate(0deg)";
+  document.getElementById("nav-img").style.transitionDelay = ".15s"
 }
 
 function openInventoryNav() {
