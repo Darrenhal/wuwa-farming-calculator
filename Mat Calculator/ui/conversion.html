@@ -13,8 +13,9 @@
   <div id="header">
     <div class="sidenav" id="navSidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="inventory.html">Inventory</a>
       <a href="#">Farming Calculator</a>
+      <a href="inventory.html">Inventory</a>
+      <a href="settings.html">Settings</a>
     </div>
   
     <img onclick="openNav()" src="../images/icons/hamburger-menu.svg" id="nav-img">
@@ -23,7 +24,7 @@
   <div id="main">
     <div class="ressource-type-selector">
       <span>Select ressources: By Usage</span>
-      <label class="switch">
+      <label class="switch" onchange="toggleRessourceSource(this.value)">
         <input type="checkbox">
         <span class="slider round"></span>
       </label>
@@ -37,12 +38,7 @@
           <div class="res-label">
             <label for="">Ressource Type</label>
           </div>
-          <select name="Ressource Type" id="res-type-dropdown" aria-label="Ressource Type" class="dropdown">
-            <option value="char-xp">Character Material</option>
-            <option value="weapon-xp">Weapon Material</option>
-            <option value="talent-mat">Talent Material</option>
-            <option value="ascension-ring">Echo Material</option>
-            <option value="ascension-ring">Gacha Currencies</option>
+          <select name="Ressource Type" id="res-type-dropdown" aria-label="Ressource Type" class="dropdown" onchange="loadMaterialTypes(this.value)">
           </select>
         </div>
 
@@ -50,11 +46,7 @@
           <div class="res-label">
             <label for="">Material Type</label>
           </div>
-          <select name="Material Type" id="mat-type-dropdown" aria-label="Material Type" class="dropdown">
-            <option value="char-xp">Character XP Material</option>
-            <option value="talent-mat">Talent Material</option>
-            <option value="weapon-xp">Weapon XP Material</option>
-            <option value="ascension-ring">Ascension Ring</option>
+          <select name="Material Type" id="mat-type-dropdown" aria-label="Material Type" class="dropdown" onchange="toggleRarityFields(this.value)">
           </select>
         </div>
       </div>

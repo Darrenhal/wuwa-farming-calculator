@@ -14,10 +14,15 @@ input {
   border-radius: 8px;
   font-size: 20px;
   border: none;
+  transition: backgroud-color .3s;
 }
 
 input:focus {
    outline: none;
+}
+
+input:disabled {
+  background-color: rgba(0, 0, 0, .5);
 }
 
 button {
@@ -193,7 +198,7 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px rgb(255, 206, 44);
+  box-shadow: 0 0 1px rgb(0, 124, 213); /*rgb(255, 206, 44);*/
 }
 
 input:checked + .slider:before {

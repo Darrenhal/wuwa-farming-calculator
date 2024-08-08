@@ -5,7 +5,7 @@ const path = require('path');
 const app = express();
 const PORT = 3000;
 
-const directoryPath = path.join(__dirname, 'ui'); // Ändern Sie dies auf Ihr Hauptverzeichnis
+const directoryPath = path.join(__dirname, 'ui');
 
 app.use(express.static(directoryPath));
 app.use(express.static(path.join(__dirname, 'public')));

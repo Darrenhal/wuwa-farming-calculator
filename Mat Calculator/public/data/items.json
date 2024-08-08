@@ -1,5 +1,5 @@
 {
-  "domain-drops": [
+  "Forgery Domain Drops": [
     {
       "type": "Whisperin Core",
       "name": "LF Whisperin Core",
@@ -309,7 +309,7 @@
       "img-src": "images/ressources/talent_weapon/Item_Cadence_Blossom.webp"
     }
   ],
-  "xp-mats": [
+  "XP Domain Drops": [
     {
       "type": "Resonance Potion",
       "name": "Basic Resonance Potion",
@@ -421,8 +421,9 @@
       "img-src": "images/ressources/echo/Item_Premium_Tuner.webp"
     }
   ],
-  "boss-drops": [
+  "Boss Drops": [
     {
+      "type": "Elegy Tacet Core",
       "name": "Elegy Tacet Core",
       "rarity": 3,
       "categories": [
@@ -432,6 +433,7 @@
       "img-src": "images/ressources/character/Item_Elegy_Tacet_Core.webp"
     },
     {
+      "type": "Gold-Dissolving Feather",
       "name": "Gold-Dissolving Feather",
       "rarity": 3,
       "categories": [
@@ -441,6 +443,7 @@
       "img-src": "images/ressources/character/Item_Gold-Dissolving_Feather.webp"
     },
     {
+      "type": "Group Abomination Tacet Core",
       "name": "Group Abomination Tacet Core",
       "rarity": 3,
       "categories": [
@@ -450,6 +453,7 @@
       "img-src": "images/ressources/character/Item_Group_Abomination_Tacet_Core.webp"
     },
     {
+      "type": "Hidden Thunder Tacet Core",
       "name": "Hidden Thunder Tacet Core",
       "rarity": 3,
       "categories": [
@@ -459,6 +463,7 @@
       "img-src": "images/ressources/character/Item_Hidden_Thunder_Tacet_Core.webp"
     },
     {
+      "type": "Rage Tacet Core",
       "name": "Rage Tacet Core",
       "rarity": 3,
       "categories": [
@@ -468,6 +473,7 @@
       "img-src": "images/ressources/character/Item_Rage_Tacet_Core.webp"
     },
     {
+      "type": "Roaring Rock Fist",
       "name": "Roaring Rock Fist",
       "rarity": 3,
       "categories": [
@@ -477,6 +483,7 @@
       "img-src": "images/ressources/character/Item_Roaring_Rock_Fist.webp"
     },
     {
+      "type": "Sound-Keeping Tacet Core",
       "name": "Sound-Keeping Tacet Core",
       "rarity": 3,
       "categories": [
@@ -486,6 +493,7 @@
       "img-src": "images/ressources/character/Item_Sound-Keeping_Tacet_Core.webp"
     },
     {
+      "type": "Strife Tacet Core",
       "name": "Strife Tacet Core",
       "rarity": 3,
       "categories": [
@@ -495,6 +503,7 @@
       "img-src": "images/ressources/character/Item_Strife_Tacet_Core.webp"
     },
     {
+      "type": "Thundering Tacet Core",
       "name": "Thundering Tacet Core",
       "rarity": 3,
       "categories": [
@@ -504,8 +513,9 @@
       "img-src": "images/ressources/character/Item_Thundering_Tacet_Core.webp"
     }
   ],
-  "weekly-boss-drops":[
+  "Weekly Boss Drops":[
     {
+      "type": "Monument Bell",
       "name": "Monument Bell",
       "rarity": 3,
       "categories": [
@@ -515,6 +525,7 @@
       "img-src": "images/ressources/talent/Item_Monument_Bell.webp"
     },
     {
+      "type": "Unending Destruction",
       "name": "Unending Destruction",
       "rarity": 3,
       "categories": [
@@ -524,6 +535,7 @@
       "img-src": "images/ressources/talent/Item_Unending_Destruction.webp"
     },
     {
+      "type": "Dreamless Feather",
       "name": "Dreamless Feather",
       "rarity": 3,
       "categories": [
@@ -533,6 +545,7 @@
       "img-src": "images/ressources/talent/Item_Dreamless_Feather.webp"
     },
     {
+      "type": "Sentinels Dagger",
       "name": "Sentinels Dagger",
       "rarity": 3,
       "categories": [
@@ -542,7 +555,7 @@
       "img-src": "images/ressources/talent/Item_Sentinels_Dagger.webp"
     }
   ],
-  "mob-drops": [
+  "Mob Drops": [
     {
       "type": "Ring",
       "name": "Crude Ring",
@@ -632,8 +645,9 @@
       "img-src": "images/ressources/talent_weapon/Item_Mask_of_Insanity.webp"
     }
   ],
-  "currencies": [
+  "Gacha Currencies": [
     {
+      "type": "Astrite",
       "name": "Astrite",
       "rarity": 4,
       "categories": [
@@ -643,6 +657,7 @@
       "img-src": "images/ressources/gacha/Item_Astrite.webp"
     },
     {
+      "type": "Lustrous Tide",
       "name": "Lustrous Tide",
       "rarity": 4,
       "categories": [
@@ -652,6 +667,7 @@
       "img-src": "images/ressources/gacha/Item_Lustrous_Tide.webp"
     },
     {
+      "type": "Radiant Tide",
       "name": "Radiant Tide",
       "rarity": 4,
       "categories": [
@@ -661,6 +677,7 @@
       "img-src": "images/ressources/gacha/Item_Radiant_Tide.webp"
     },
     {
+      "type": "Forging Tide",
       "name": "Forging Tide",
       "rarity": 4,
       "categories": [
@@ -670,6 +687,7 @@
       "img-src": "images/ressources/gacha/Item_Forging_Tide.webp"
     },
     {
+      "type": "Oscillated Coral",
       "name": "Oscillated Coral",
       "rarity": 4,
       "categories": [
@@ -679,6 +697,7 @@
       "img-src": "images/ressources/gacha/Item_Oscillated_Coral.webp"
     },
     {
+      "type": "Afterglow Coral",
       "name": "Afterglow Coral",
       "rarity": 4,
       "categories": [

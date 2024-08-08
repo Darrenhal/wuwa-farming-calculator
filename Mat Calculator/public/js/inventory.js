@@ -1,3 +1,9 @@
+////////////////global variables////////////////
+
+
+
+///////////////////functions////////////////////
+
 window.onscroll = function() {animateHeader()};
 
 function filterItems(category) {
@@ -76,65 +82,19 @@ function loadItems() {
       let ressourceCategories = [];
       let ressourceRarity = [];
 
-      ressources['domain-drops'].forEach(ressource => {
-        ressourceImgSource.push(rootPath + ressource['img-src']);
-        let categoryString = "";
-        ressource['categories'].forEach(category => {
-          categoryString += category + " ";
-        });
-        ressourceCategories.push(categoryString);
-        ressourceRarity.push(ressource['rarity']);
-      });
+      const keys = Object.keys(ressources);
 
-      ressources['mob-drops'].forEach(ressource => {
-        ressourceImgSource.push(rootPath + ressource['img-src']);
-        let categoryString = "";
-        ressource['categories'].forEach(category => {
-          categoryString += category + " ";
+      for(key of keys) {
+        ressources[key].forEach(ressource => {
+          ressourceImgSource.push(rootPath + ressource['img-src']);
+          let categoryString = "";
+          ressource['categories'].forEach(category => {
+            categoryString += category + " ";
+          });
+          ressourceCategories.push(categoryString);
+          ressourceRarity.push(ressource['rarity']);
         });
-        ressourceCategories.push(categoryString);
-        ressourceRarity.push(ressource['rarity']);
-      });
-
-      ressources['weekly-boss-drops'].forEach(ressource => {
-        ressourceImgSource.push(rootPath + ressource['img-src']);
-        let categoryString = "";
-        ressource['categories'].forEach(category => {
-          categoryString += category + " ";
-        });
-        ressourceCategories.push(categoryString);
-        ressourceRarity.push(ressource['rarity']);
-      });
-
-      ressources['boss-drops'].forEach(ressource => {
-        ressourceImgSource.push(rootPath + ressource['img-src']);
-        let categoryString = "";
-        ressource['categories'].forEach(category => {
-          categoryString += category + " ";
-        });
-        ressourceCategories.push(categoryString);
-        ressourceRarity.push(ressource['rarity']);
-      });
-
-      ressources['xp-mats'].forEach(ressource => {
-        ressourceImgSource.push(rootPath + ressource['img-src']);
-        let categoryString = "";
-        ressource['categories'].forEach(category => {
-          categoryString += category + " ";
-        });
-        ressourceCategories.push(categoryString);
-        ressourceRarity.push(ressource['rarity']);
-      });
-
-      ressources['currencies'].forEach(ressource => {
-        ressourceImgSource.push(rootPath + ressource['img-src']);
-        let categoryString = "";
-        ressource['categories'].forEach(category => {
-          categoryString += category + " ";
-        });
-        ressourceCategories.push(categoryString);
-        ressourceRarity.push(ressource['rarity']);
-      });
+      }
 
       const resLength = ressourceCategories.length;
 
