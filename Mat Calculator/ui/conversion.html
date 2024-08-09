@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../style/general/sidebar.css">
   <link rel="stylesheet" href="../style/conversion/conversionstyles.css">
 </head>
-<body onload="loadRessources()">
+<body onload="initializePageContent()">
   <div id="header">
     <div class="sidenav" id="navSidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -24,7 +24,7 @@
   <div id="main">
     <div class="ressource-type-selector">
       <span>Select ressources: By Usage</span>
-      <label class="switch" onchange="toggleRessourceSource(this.value)">
+      <label class="switch" onchange="toggleRessourceSource()">
         <input type="checkbox">
         <span class="slider round"></span>
       </label>
@@ -88,14 +88,16 @@
 
     <div class="ul-row">
       <label for="" class="ul-label">Union Level</label>
-      <input type="number" placeholder="Union Level" id="ul-input" min="1" max="60" oninput="validateUL(this.value)">
+      <input type="number" placeholder="Union Level" id="ul-input" min="1" max="60" oninput="limitUL(this.value)" onblur="validateUL(this.value)">
     </div>
 
     <div class="button-section">
-      <button>Calculate # of total runs</button>
-      <button>Calculate # of remaining runs</button>
-      <button>Add to inventory</button>
-      <button>Set inventory</button>
+      <button onclick="calculateTotalRuns()">Calculate # of total runs to input</button>
+      <button onclick="calculateTotalRuns()">Calculate # of total runs to goal</button>
+      <button onclick="calculateRemainingRuns()">Calculate # of remaining runs from input to goal</button>
+      <button onclick="calculateRemainingRuns()">Calculate # of remaining runs for inventory</button>
+      <button onclick="addToInventory()">Add to inventory</button>
+      <button onclick="setInventory()">Set inventory</button>
     </div>
   </div>
   

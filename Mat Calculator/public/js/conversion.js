@@ -2,24 +2,69 @@
 
 //1 = Ressource Source: Aquisition Method
 //0 = Ressource Source: Usage
-let ressourceSource = 0;
+let ressourceSource;
 
+let unionLevel;
 
 let ressourceMap;
 
 
 ///////////////////functions////////////////////
 
-//limit Union Level to values between 1 and 60 in case of manual value insertion
-function validateUL(value) {
-  if(value < 1 && value !== "") {
-    value = 1;
-  } else if(value > 60) {
-    value = 60;
-  } else {
-    return;
+
+////////Helper Functions////////
+
+function getRessourceCounts() {
+  let ressourceCounts = [];
+  for(let i = 1; i <= 4; i++) {
+    ressourceCounts.push(document.getElementById(`r${i}`).value != "" ? parseInt(document.getElementById(`r${i}`).value) : 0);
   }
-  document.getElementById("ul-input").value = value;
+  return ressourceCounts;
+}
+
+function initializeVariables() {
+  ressourceSource = 0;
+  unionLevel = 1;
+}
+
+function calculateRessourceBaseline(ressourceCounts) {
+  let baseline = 0;
+  for(ressource in ressourceCounts) {
+    baseline += ressourceCounts[ressource] * (3 ** (ressource));
+  }
+  return baseline;
+}
+
+/////////HTML Functions/////////
+
+function initializePageContent() {
+  initializeVariables();
+  document.getElementById("ul-input").value = unionLevel;
+  loadRessources();
+}
+
+//limit Union Level to values between 1 and 60 in case of manual value insertion
+function limitUL(value) {
+  if(value < 1 && value !== "") {
+    unionLevel = 1;
+  } else if(value > 60) {
+    unionLevel = 60;
+  } else {
+    if(value !== "") {
+      unionLevel = value;
+    }
+    return true;
+  }
+  document.getElementById("ul-input").value = unionLevel;
+  return false;
+}
+
+//validate that a correct value for the Union Level is set
+//limitUL updates for each input change, validateUL updates when Union Level input loses focus
+function validateUL(value) {
+  if(value == "") {
+    document.getElementById("ul-input").value = unionLevel;
+  }
 }
 
 //limit values for ressources to values >= 0
@@ -32,7 +77,7 @@ function validateRessourceAmount(value, id) {
 
 //toggle the source for the dropdown menus
 //Source by Usage = 0 or by acquisition method 1
-function toggleRessourceSource(value) {
+function toggleRessourceSource() {
   ressourceSource ^= 1;
   loadRessources();
 }
@@ -138,4 +183,26 @@ function toggleRarityFields(value) {
       document.getElementById(`r${i}`).readOnly = true;
     }
   }
+}
+
+function calculateTotalRuns() {
+  let ressourceCounts = getRessourceCounts();
+  let ressourceBaseline = calculateRessourceBaseline(ressourceCounts);
+  
+}
+
+function calculateRemainingRuns() {
+
+}
+
+function addToInventory() {
+
+}
+
+function setInventory() {
+
+}
+
+function getFarmingBaseline(unionLevel, materialType) {
+  return 25;
 }
