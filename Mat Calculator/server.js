@@ -1,42 +1,25 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
+require('dotenv').config();
+
 
 const app = express();
 const PORT = 3000;
 
-const directoryPath = path.join(__dirname, 'ui');
-
-app.use(express.static(directoryPath));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', (req, res) => {
-    fs.readFile('./ui/conversion.html', 'utf-8', (err, html) =>  {
+const indexRoute = require('./routes/index');
+app.use('/', indexRoute);
 
-      if(err) {
-        res.status(500).send('sorry, out of order');
-      }
+const ressourceRoute = require('./routes/ressources');
+app.use('/ressources', ressourceRoute);
 
-      res.send(html);
+const usersRouter = require('./routes/users');
+app.use('/users', usersRouter);
 
-    })
-});
-
-app.get('/ressources', (req, res) => {
-  const ressourcePath = './public/images/ressources';
-
-  fs.readFile('./public/data/items.json', 'utf-8', (err, file) => {
-
-    if(err) {
-      res.status(500).send('Ressource API out of order!');
-    }
-
-    let f = JSON.parse(file);
-    
-    res.send(f);
-
-  });
-});
+const inventoryBaseline = require('./routes/inventory');
+app.use('/inventoryBaseline', inventoryBaseline);
 
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);

@@ -16,20 +16,23 @@ body {
   transition: all .3s ease;
   align-items: center;
   padding: 30px;
+  /* justify-content: space-between; */
 }
 
 /* #header-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
 #login-img {
   transform: rotate(180deg);
   height: 50px;
+  margin-right: 40px;
   filter: invert(1);
   cursor: pointer;
-} */
+  transition: transform .1s;
+}
 
 #main {
   transition: margin-left .3s;
@@ -40,4 +43,21 @@ body {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  margin-right: 20px;
+  transition: box-shadow .15s;
+}
+
+button:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+button:active {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, .5);
 }

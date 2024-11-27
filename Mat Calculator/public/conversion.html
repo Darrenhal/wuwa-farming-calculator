@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wuthering Waves Material Farming Calculator</title>
+
+  <link rel="stylesheet" href="./style/general/style.css">
+  <link rel="stylesheet" href="./style/general/sidebar.css">
+  <link rel="stylesheet" href="./style/conversion/conversionstyles.css">
+</head>
+<body onload="initializePageContent()">
+  <div id="header">
+    <div class="sidenav" id="navSidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Farming Calculator</a>
+      <a href="inventory.html">Inventory</a>
+      <a href="settings.html">Settings</a>
+    </div>
+  
+    <img onclick="openNav()" src="./images/icons/hamburger-menu.svg" id="nav-img">
+  </div>
+
+  <div id="main">
+    <div class="ressource-type-selector">
+      <span>Select ressources: By Usage</span>
+      <label class="switch" onchange="toggleRessourceSource()">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+      <span>By Acquisition Method</span>
+    </div>
+
+
+    <div class="grid-container">
+      <div class="ressource-selection-container">
+        <div class="selection-flex-item">
+          <div class="res-label">
+            <label for="">Ressource Type</label>
+          </div>
+          <select name="Ressource Type" id="res-type-dropdown" aria-label="Ressource Type" class="dropdown" onchange="loadMaterialTypes(this.value)">
+          </select>
+        </div>
+
+        <div class="selection-flex-item">
+          <div class="res-label">
+            <label for="">Material Type</label>
+          </div>
+          <select name="Material Type" id="mat-type-dropdown" aria-label="Material Type" class="dropdown" onchange="toggleRarityFields(this.value)">
+          </select>
+        </div>
+      </div>
+
+      <div class="flex-container">
+        <div class="flex-item">
+          <div class="rarity-description">
+            <label class="rarity-label">Rarity 1 (green)</label>
+            <div class="rarity-bar" id="rarity-1"></div>
+          </div>
+          <input class="res-input" type="number" min="0" placeholder="Rarity 1" id="r1" oninput="validateRessourceAmount(this.value, this.id)">
+        </div>
+
+        <div class="flex-item">
+          <div class="rarity-description">
+            <label class="rarity-label">Rarity 2 (blue)</label>
+            <div class="rarity-bar" id="rarity-2"></div>
+          </div>
+          <input class="res-input" type="number" min="0" placeholder="Rarity 2" id="r2" oninput="validateRessourceAmount(this.value, this.id)">
+        </div>
+
+        <div class="flex-item">
+          <div class="rarity-description">
+            <label class="rarity-label">Rarity 3 (purple)</label>
+            <div class="rarity-bar" id="rarity-3"></div>
+          </div>
+          <input class="res-input" type="number" min="0" placeholder="Rarity 3" id="r3" oninput="validateRessourceAmount(this.value, this.id)">
+        </div>
+
+        <div class="flex-item">
+          <div class="rarity-description">
+            <label class="rarity-label">Rarity 4 (gold)</label>
+            <div class="rarity-bar" id="rarity-4"></div>
+          </div>
+          <input class="res-input" type="number" min="0" placeholder="Rarity 4" id="r4" oninput="validateRessourceAmount(this.value, this.id)">
+        </div>
+      </div>
+    </div>
+
+    <div class="ul-row">
+      <label for="" class="ul-label">Union Level</label>
+      <input type="number" placeholder="Union Level" id="ul-input" min="1" max="60" oninput="limitUL(this.value)" onblur="validateUL(this.value)">
+    </div>
+
+    <div class="button-section">
+      <button onclick="calculateTotalRuns()">Calculate # of total runs to input</button>
+      <button onclick="calculateTotalRuns()">Calculate # of total runs to goal</button>
+      <button onclick="calculateRemainingRuns()">Calculate # of remaining runs from input to goal</button>
+      <button onclick="calculateRemainingRuns()">Calculate # of remaining runs for inventory</button>
+      <button onclick="addToInventory()">Add to inventory</button>
+      <button onclick="setInventory()">Set inventory</button>
+      <button onclick="getInventoryBaseline()">Test</button>
+    </div>
+  </div>
+  
+  <script src="./js/navbar.js"></script>
+  <script src="./js/conversion.js"></script>
+</body>
+</html>

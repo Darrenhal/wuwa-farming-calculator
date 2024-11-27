@@ -206,3 +206,8 @@ function setInventory() {
 function getFarmingBaseline(unionLevel, materialType) {
   return 25;
 }
+
+function getInventoryBaseline() {
+  //get Mat Inv + Rarities from API
+  fetch('/inventoryBaseline')
+}
