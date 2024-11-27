@@ -16,9 +16,11 @@ function sha512(password, salt) {
   };
 };
 
-export function saltHashPassword(userpassword, salt) {
+function saltHashPassword(userpassword, salt) {
   if (salt === null) {
     let salt = genRandomString(128);
   }
   return sha512(userpassword, salt);
 }
+
+module.exports = {saltHashPassword};
